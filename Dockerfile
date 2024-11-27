@@ -2,7 +2,8 @@ FROM openjdk:11
 
 WORKDIR /application
 
-COPY Task.java .
+COPY ./Task.java .
+
 
 RUN javac Task.java
 
