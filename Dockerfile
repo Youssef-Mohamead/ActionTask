@@ -1,14 +1,9 @@
-
 FROM openjdk:11
-
 
 WORKDIR /application
 
+COPY ./Os.java .
 
-COPY ./Task.java .
+RUN javac Os.java
 
-
-RUN javac Task.java
-
-
-CMD ["java", "Task"]
+CMD ["java", "Os"]
