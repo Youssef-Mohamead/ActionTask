@@ -1,6 +1,5 @@
 
 
-package com.mycompany.task;
 
 public class Task {
 
