@@ -1,5 +1,11 @@
-FROM openjdk:11
-COPY task.java /usr/src/myapp/
-WORKDIR /usr/src/myapp/
+FROM openjdk
+
+
+WORKDIR /application
+
+COPY Task.java .
+
 RUN javac Task.java
-CMD ["java", "Task"]
+
+
+CMD java Task
